@@ -1,0 +1,24 @@
+
+Après vérification, il est en effet inutile de vérifier ainsi : 
+if(isset($_GET['id']) !empty($_GET['id'])) {du code}
+
+CAR isset() vérifie si la variable indiquée en argument existe.
+empty() vérifie si la variable indiquée en argument n'existe pas et est nulle.
+
+* "" (une chaîne vide)
+* 0 (0 en tant qu'entier)
+* "0" (0 en tant que chaîne de caractères)
+* NULL
+* FALSE
+* array() (un tableau vide)
+* var $var; (une variable déclarée, mais sans valeur dans une classe)
+
+
+attribut method : get ou post
+get : les données transitent en clair 
+par l’URL. Limité à 256 caractères.
+
+
+post : les données ne transitent pas 
+en clair dans l’url. La quantité de 
+données n’est pas limitée 

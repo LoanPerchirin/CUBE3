@@ -1,0 +1,265 @@
+html{
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body{
+    background-color: rgb(11, 1, 15);
+    color: white;
+    margin:auto;
+    font-family: Comfortaa, sans-serif;
+}
+
+header{
+    background-color: rgb(112,19,109);
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+/* sous-header -> en gros c'est les 3
+compartiments*/
+.sous-header{
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.image{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.bouton{
+  height: 25px;
+  width: 80px;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.bouton:hover{
+  color: black;
+  background-color: white; 
+}
+
+#recherche{
+  height: 20px;
+  width: 200px;
+  border: solid 1px black;
+}
+  
+#logoMenu{
+    display: none;
+    height: 45px;
+    width: 45px;
+}
+
+#menu-demo2{
+    display: none;
+}
+    
+@media(max-width: 900px){
+
+  #logoMenu{
+    display: inherit;
+  }
+
+  .bouton{
+    display: none;
+  }
+
+  #recherche{
+    display: none;
+  }
+
+  #menu-demo2{
+    display: inherit;
+  }
+
+
+    /*menu déroulant*/
+  #menu-demo2, #menu-demo2 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    }
+    #menu-demo2 li{
+    display:inline-block;
+    position:relative;
+    }
+    #menu-demo2 ul li{
+    display:inherit;
+    border-radius:0;
+    }
+    #menu-demo2 ul li:hover{
+    border-radius:0;
+    }
+    #menu-demo2 ul li:last-child{
+    border-radius:0 0 8px 8px;
+    }
+    #menu-demo2 ul{
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+    }
+    #menu-demo2 li:hover ul{
+    max-height:15em;
+    }
+    /* background des liens menus */
+  
+    #menu-demo2 li:last-child li{
+    background: rgb(88, 16, 86);
+    }
+    /* background des liens menus et sous menus au survol */
+    
+    #menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+    background:rgb(88, 16, 86);
+    }
+    /* les a href */
+    #menu-demo2 a{
+    text-decoration:none;
+    display:block;
+    padding:8px 10px;
+    color:#fff;
+    font-family:arial;
+    }
+    #menu-demo2 ul a{
+    padding:8px 0;
+    }
+    #menu-demo2 li:hover li a{
+    color: white;
+    text-transform:inherit;
+    }
+    #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+    color:goldenrod;
+    }
+  /*menu déroulant*/
+
+}
+
+
+  @media(max-width: 290px){
+    #titre{
+      display: none;
+    }
+  }
+/*FIN HEADER*/
+
+
+
+
+
+/*Permet un effet Zoom sur les images*/
+.image:hover{
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+
+.indicateurAccueil{
+  padding-left: 20px;
+}
+
+/*PARTIE CAROUSSEL*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+.wrapper section .item {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+.wrapper section .item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
+}
+/*PARTIE CAROUSSEL*/
+
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(112,19,109);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sous-footer{
+    display: flex;
+   /* /* flex-flow: nowrap; Met les items côtes à côtes* */
+    align-items: center;
+    gap: 15px;
+}
+
+#milieuFooter{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.petiteImages{
+  height: 20px;
+  width: 20px;
+  border: solid black 2px;
+}
+
+
+  @media(max-width: 620px){
+    footer{
+      padding-top: 10px; 
+      flex-direction: column;
+    }
+  }

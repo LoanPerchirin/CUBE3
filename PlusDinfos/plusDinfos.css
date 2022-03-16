@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 760px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: chartreuse;
+    border: chartreuse 3px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sous-header{
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.image{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+/*Permet un effet Zoom sur les images*/
+.image:hover{
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+h1{
+    text-align: center;
+}
