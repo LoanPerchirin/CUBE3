@@ -318,6 +318,10 @@ footer{
     height: 2px;
   }
 
+  .marginEnMoins{
+    margin: 5px;
+  }
+
   /* DÉBUT GESTION PROFIL */
 
   #presentationProfil{
@@ -359,7 +363,24 @@ footer{
     align-items: center;
     gap: 80px;
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 30px;
+  }
+
+  #sauvegarderGestionProfil{
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
+
+  .boutons{
+    color: white;
+    background-color: rgb(112,19,109);
+    border: none;
+    padding: 5px;
+    box-shadow: 3px 3px rgb(85, 14, 83);
+  }
+
+  .boutons:hover{
+    background-color: rgb(122, 35, 119);
   }
 
   @media(max-width: 730px){
@@ -377,3 +398,94 @@ footer{
 
 
   /* FIN GESTION PROFIL */
+
+
+
+
+  /* DÉBUT FICHE CASTING */
+
+  #compartimentPhotoInfoCasting{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  #photoCasting{
+    height: 400px;
+    width: 300px;
+  }
+
+  #infoCasting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #infoCastingBas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #biographie{
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  #compartimentFilmographie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .imageFilm{
+    height: 300px;
+    width: 150px;
+    border: 3px white solid;
+    transition: 250ms;
+  }
+
+  .imageFilm:hover{
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05); 
+  }
+
+
+  #envoyerUnCommentaire{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+
+  }
+
+  .commentaires{
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  /* FIN FICHE CASTING */
