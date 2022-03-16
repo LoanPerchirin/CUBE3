@@ -18,6 +18,8 @@ header{
     color: rgb(255, 255, 255);
 }
 
+
+
 #logodusite{
   width: 50px;
 }
@@ -35,6 +37,12 @@ compartiments*/
     height: 50px;
     width: 50px;
     background-size: cover;
+}
+
+.imageGrande{
+  height: 170px;
+  width: 170px;
+  background-size: cover;
 }
 
 .bouton{
@@ -295,3 +303,77 @@ footer{
                   /* / 500px 500px 300px; */;            
     }
   }
+
+
+  .text-align-center{
+    text-align: center;
+  }
+
+  .padding-top{
+    padding-top: 110px;
+  }
+
+  .block{
+    width: 200px;
+    height: 2px;
+  }
+
+  /* DÉBUT GESTION PROFIL */
+
+  #presentationProfil{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+  }
+
+  #espacementLabel{
+    padding-right: 6px;
+  }
+
+  #informationDebutProfil{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .espacementBas{
+    padding-bottom: 5px ;
+  }
+
+
+  #test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+  }
+
+  #CPVilleProfil{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+    padding-bottom: 200px;
+  }
+
+  @media(max-width: 730px){
+    #test{
+      flex-direction:column ;
+      gap: 20px;
+    }
+    .block{
+      display: none;
+    }
+    .padding-top{
+      padding-top: 5px;
+    }
+  }
+
+
+  /* FIN GESTION PROFIL */
