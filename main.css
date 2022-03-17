@@ -489,3 +489,109 @@ footer{
   }
 
   /* FIN FICHE CASTING */
+
+  /* DÉBUT ADMIN */
+
+  .boutonAjouter{
+    width: 150px;
+    padding: 8px;
+    background-color: rgb(59, 59, 255);
+    border-radius:5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boutonAjouter:hover{
+    background-color: rgb(28, 28, 255);
+  }
+
+  .boutonModifier{
+    width: 150px;
+    padding: 8px;
+    background-color: rgb(59, 255, 101);
+    border-radius:5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boutonModifier:hover{
+    background-color: rgb(21, 202, 82);
+  }
+
+  .boutonSupprimer{
+    width: 150px;
+    padding: 8px;
+    background-color: rgb(255, 59, 59);
+    border-radius:5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boutonSupprimer:hover{
+    background-color: rgb(182, 18, 18);
+  }
+
+  .boutonValider{
+    width: 150px;
+    padding: 8px;
+    background-color: rgb(36, 143, 59);
+    border-radius:5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 27px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boutonValider:hover{
+    background-color: rgb(27, 112, 46);
+  }
+
+
+  .compartimentBouton{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .boutonAdmin{
+    display: flex;
+    justify-content: center;
+  }
+
+  #listeUtilisateurs{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    display: none;
+  }
+
+  #listeInscription{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    display: none;
+  }
+
+  /* FIN ADMIN */
