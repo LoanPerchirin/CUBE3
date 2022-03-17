@@ -20,108 +20,76 @@
    
     <header>
 
-<nav>
 <div class="sous-header">
-      <ul id="menu-demo2">
-            <li><a href="#"><img id="logoMenu" src="images/LogoMenu.png" alt="Logo Menu"></a>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Explorer</a></li>
-                    <li><a href="#">Mes films</a></li>
-                    <li><a href="contacter/contacter.html">Contact</a></li>
-                </ul>
-            </li>
-        </ul>  
 
           <img id="logodusite" src="images/flixnetblanc3.png" alt="Logo FlixNet">
 
             <h1 id="titre">FlixNet</h1>
 
 </div>
-</nav>
 
-
-<div class="sous-header">
-            <div class="bouton">Accueil</div>
-            <div class="bouton">Explorer</div>
-
-            <input id="recherche" onkeyup="search_element()" type="text"
-            name="search" placeholder="Recherche">
-            <!-- https://fr.acervolima.com/barre-de-recherche-utilisant-html-css-et-javascript/#:~:text=La%20balise%20d'entr%C3%A9e%20est,'espace%20r%C3%A9serv%C3%A9%2C%20le%20nom%20. -->
-
-
-            <div class="bouton">Mes films</div>
-            <div class="bouton">Nous contacter</div>
-
-          </div>
-          <div class="sous-header" id="header1">
-
-            <div class="utilisateur"> 
-                <a href="GestionDuProfil/GestionDuProfil.html"><img class="image" src="images/ProfilBlanc.png"></a>
-            </div>
-        </div>
-        </div>
-    </header>
-
+</header>
 
 
    <!--fin Header-->
 
 
-   
-<div>
-
-<h1>Inscrivez-vous à Flixnet</h1>
-
-<?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
-  <form action="" method="POST">
-
-      <div>
-
-          <label class="label">Pseudonyme :</label> 
-          <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
   
-          <label class="label">E-Mail :</label>        
-          <input class="inputFormInscription" type="email" name="email" placeholder="E-Mail" required class="txtBox"/>
+   
+<div id="compartimentInscriptionConnexion">  
 
-          <label class="label">Mot de passe :</label> 
-          <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
+  <div>
 
-      </div>
+  <h2 class="text-align-center">Inscrivez-vous à Flixnet</h2>
 
-      <div class="annuler-enregistrer">
-          <input type="reset" class="btn" value="Annuler"/>     
-          <input type="submit" class="btn" value="Enregistrer" name="enregistrerInscription" /> 
-      </div>
-  </form>
+  <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+    <form action="" method="POST">
+
+        <div class="cssFormulaire">
+
+            <label class="label">Pseudonyme :</label> 
+            <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
+    
+            <label class="label">E-Mail :</label>        
+            <input class="inputFormInscription" type="email" name="email" placeholder="E-Mail" required class="txtBox"/>
+
+            <label class="label">Mot de passe :</label> 
+            <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
+
+        </div>
+
+        <div class="annuler-enregistrer">
+            <input type="reset" class="btn" value="Annuler"/>     
+            <input type="submit" class="btn" value="Enregistrer" name="enregistrerInscription" /> 
+        </div>
+    </form>
+
+  </div>
+
+  <div>
+
+      <h2 class="text-align-center">Connectez-vous à FlixNet</h2>
+
+      <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+          <form action="" method="POST">
+
+              <div class="cssFormulaire">
+
+                  <label class="label">Pseudonyme :</label> 
+                  <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
+
+                  <label class="label">Mot de passe :</label> 
+                  <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
+
+              </div>
+
+              <div class="annuler-enregistrer">
+                  <input type="submit" class="btn" value="Annuler"/>     
+                  <input type="submit" class="btn" value="Connexion" name="enregistrerConnexion" /> 
+              </div>
+          </form>
+  </div>
 </div>
-
-
-
-<div>
-
-    <h1>Connectez-vous FlixNet</h1>
-
-    <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
-        <form action="" method="POST">
-
-            <div>
-
-                <label class="label">Pseudonyme :</label> 
-                <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
-
-                <label class="label">Mot de passe :</label> 
-                <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
-
-            </div>
-
-            <div class="annuler-enregistrer">
-                <input type="submit" class="btn" value="Annuler"/>     
-                <input type="submit" class="btn" value="Connexion" name="enregistrerConnexion" /> 
-            </div>
-        </form>
-</div>
-
 
 
 
