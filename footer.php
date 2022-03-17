@@ -27,7 +27,7 @@ echo"
         </div>
 
         <div class='sous-footer' id='footer3'>
-          <p>Tecovid©</p>
+          <p>Flixnet ©</p>
             <img class='petiteImages'>
             <img class='petiteImages' src='images/Point d'interrogation.png' alt='Logo point d'interrogation'>
         </div>

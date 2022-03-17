@@ -228,6 +228,10 @@ border: solid 1px black;
   }
 }
 
+.sous-header a{
+  text-decoration:none;
+  color:white;
+}
 
 /*FIN HEADER*/
 
@@ -367,7 +371,7 @@ justify-self:flex-end;
       text-align: center;
   }
 }
-/*PARTIE CAROUSSEL*/
+/* fin PARTIE CAROUSSEL*/
 
 
 
@@ -382,7 +386,7 @@ footer{
 
 .sous-footer{
   display: flex;
- /* /* flex-flow: nowrap; Met les items côtes à côtes* */
+
   align-items: center;
   gap: 15px;
 }

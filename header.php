@@ -8,10 +8,10 @@ echo"
           <ul id='menu-demo2'>
                 <li><a href='#'><img id='logoMenu' src='images/LogoMenu.png' alt='Logo Menu'></a>
                     <ul>
-                        <li><a href='index.html'>Accueil</a></li>
-                        <li><a href='presentation.html'>Explorer</a></li>
-                        <li><a href='archives.html'>Mes flims</a></li>
-                        <li><a href='Galerie.html'>Contact</a></li>
+                        <li><a href='index.php'>Accueil</a></li>
+                        <li><a href='explorer.php'>Explorer</a></li>
+                        <li><a href='mesFilms.php'>Mes flims</a></li>
+                        <li><a href='contact.php'>Contact</a></li>
                     </ul>
                 </li>
             </ul>  
@@ -26,16 +26,16 @@ echo"
     
     
     <div class='sous-header'>
-                <div class='bouton'>Accueil</div>
-                <div class='bouton'>Explorer</div>
+                <a href='index.php'><div class='bouton'>Accueil</div></a>
+                <a href='explorer.php'><div class='bouton'>Explorer</div></a>
     
                 <input id='recherche' onkeyup='search_element()' type='text'
                 name='search' placeholder='Recherche'>
                 <!-- https://fr.acervolima.com/barre-de-recherche-utilisant-html-css-et-javascript/#:~:text=La%20balise%20d'entr%C3%A9e%20est,'espace%20r%C3%A9serv%C3%A9%2C%20le%20nom%20. -->
     
     
-                <div class='bouton'>Mes films</div>
-                <div class='bouton'>Nous contacter</div>
+                <a href='mesFilms.php'><div class='bouton'>Mes films</div></a>
+                <a href='contact.php'><div class='bouton'>Nous contacter</div></a>
     
               </div>
               <div class='sous-header' id='header1'>
