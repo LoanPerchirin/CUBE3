@@ -404,7 +404,7 @@ footer{
 
   /* DÉBUT FICHE CASTING */
 
-  #compartimentPhotoInfoCasting{
+  .compartimentPhotoInfo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -418,7 +418,7 @@ footer{
     width: 300px;
   }
 
-  #infoCasting{
+  .infoCasting{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -595,3 +595,22 @@ footer{
   }
 
   /* FIN ADMIN */
+
+
+
+  /* DÉBUT FICHE FILM */
+
+  #photofilm{
+    width: 300px;
+    height: 300px;
+  }
+
+  .alignement{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+
+
+  /* FIN FICHE FILM */
