@@ -36,13 +36,18 @@
 
   
    
-<div id="compartimentInscriptionConnexion">  
+<!-- <div id="compartimentInscriptionConnexion">   -->
 
-  <div>
+
 
   <h2 class="text-align-center">Inscrivez-vous à Flixnet</h2>
 
-  <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+
+  <div class="text-align-center">
+    <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+  </div>
+
+
     <form action="" method="POST">
 
         <div class="cssFormulaire">
@@ -64,13 +69,14 @@
         </div>
     </form>
 
-  </div>
 
-  <div>
 
       <h2 class="text-align-center">Connectez-vous à FlixNet</h2>
 
-      <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+
+      <div class="text-align-center"> 
+        <?php if(isset($errorMsg)){echo '<p>'.$errorMsg.'</p>';}?>
+      </div>
           <form action="" method="POST">
 
               <div class="cssFormulaire">
@@ -88,8 +94,7 @@
                   <input type="submit" class="btn" value="Connexion" name="enregistrerConnexion" /> 
               </div>
           </form>
-  </div>
-</div>
+
 
 
 
