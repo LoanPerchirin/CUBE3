@@ -5,7 +5,7 @@
         <ul id="menu-demo2">
               <li><a href="#"><img id="logoMenu" src="images/LogoMenu.png" alt="Logo Menu"></a>
                   <ul>
-                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="index.php">Accueil</a></li>
                       <li><a href="#">Explorer</a></li>
                       <li><a href="#">Mes films</a></li>
                       <li><a href="contacter/contacter.html">Contact</a></li>

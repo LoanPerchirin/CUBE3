@@ -25,7 +25,7 @@ if(isset($_POST['enregistrerConnexion'])){
                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
                 $_SESSION['email'] = $usersInfos['email'];
 
-                header('Location: index.html');
+                header('Location: index.php');
 
             }else{
                 $errorMsg = "Votre mot de passe est incorrect...";

@@ -27,7 +27,7 @@ if(isset($_POST['enregistrerInscription'])){
             $_SESSION['pseudo'] = $userInfos['pseudo'];
             $_SESSION['email'] = $userInfos['email'];
 
-            header('Location: index.html');
+            header('Location: index.php');
 
         }else{
             $errorMsg = "L'utilisateur existe déjà sur le site...";
