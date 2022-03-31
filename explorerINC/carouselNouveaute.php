@@ -14,7 +14,14 @@ else {
                // Resolution  detected     
                $width=$_GET['width'];
                if($width>=1920){
-                   echo"
+                    echo " 
+                        <div class='titreAccueil'>
+                            <h2 class='indicateurAccueil'>Nouveautés</h2>
+                        </div>
+                        <div class='carousselAccueil'>
+                          <div class='wrapper'>";
+
+                    echo"
                    <section id='section1'>
                    <a href='#section3' class='arrow__btnL' onclick= \"disableScroll()\">‹</a>  
                    <div class='item'>
@@ -73,7 +80,22 @@ else {
                <a href='#section1' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
                </div>
                </section>";
+
+               echo"
+                        </div>
+                    </div>";
+
+
                }else if($width<=1597&&$width>1341){
+
+                echo " 
+                <div class='titreAccueil'>
+                    <h2 class='indicateurAccueil'>Nouveautés</h2>
+                </div>
+                <div class='carousselAccueil'>
+                  <div class='wrapper'>";
+
+
                 echo"
                 <section id='section1'>
                 <a href='#section4' class='arrow__btnL' onclick= \"disableScroll()\">‹</a>  
@@ -143,7 +165,20 @@ else {
           </div>
 
         </section>";
+        echo"
+        </div>
+    </div>";
+
         }else if($width<=1341&&$width>938){
+
+          echo " 
+          <div class='titreAccueil'>
+              <h2 class='indicateurAccueil'>Nouveautés</h2>
+          </div>
+          <div class='carousselAccueil'>
+            <div class='wrapper'>";
+
+
                 echo"
                 <section id='section1'>
                 <a href='#section5' class='arrow__btnL' onclick= \"disableScroll()\">‹</a>  
@@ -218,7 +253,20 @@ else {
               <a href='#section1' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
         </div>
         </section>";
+        echo"
+        </div>
+    </div>";
+
                }else if($width<=938&&$width>639){
+
+                echo " 
+                <div class='titreAccueil'>
+                    <h2 class='indicateurAccueil'>Nouveautés</h2>
+                </div>
+                <div class='carousselAccueil'>
+                  <div class='wrapper'>";
+
+
                 echo"
                 <section id='section1'>
                 <a href='#section5' class='arrow__btnL' onclick= \"disableScroll()\">‹</a>  
@@ -264,7 +312,7 @@ else {
                 <img src='https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABbXWODpAWqVXcmmjMA7K-2mPkQpvwCLfSdeyhVXzR8A3MSpdSEnnjf4HEJJTYC-TnktU6njTUGAxmzWEYCaJbk4v_ZeL-7QGzmkvYBjg_N-evr2XmcX-Fanoyvu_nimFP4iigPe4O3Vr_WcgplhwkDrJwPUJa84wRLrNAx3TufN5V7cWRP4indqu5HQahvgFEqfL9zjp4g.jpg' alt='Describe Image'>
             </div>
 
-                    <a href='#section5' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
+                    <a href='#section' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
                 
           </section>
 
@@ -301,7 +349,21 @@ else {
           <a href='#section1' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
     </div>
     </section>";
+
+    echo"
+    </div>
+</div>";
+
                }else if($width<=639){
+
+                echo " 
+                <div class='titreAccueil'>
+                    <h2 class='indicateurAccueil'>Nouveautés</h2>
+                </div>
+                <div class='carousselAccueil'>
+                  <div class='wrapper'>";
+
+
                 echo"
                 <section id='section1'>
                 <a href='#section5' class='arrow__btnL' onclick= \"disableScroll()\">‹</a>  
@@ -364,6 +426,10 @@ else {
           <a href='#section1' class='arrow__btnR' onclick= \"disableScroll()\">›</a>
     </div>
     </section>";
+
+    echo"
+            </div>
+        </div>";
                }
      }     
      else {     
