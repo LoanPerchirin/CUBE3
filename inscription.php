@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connexion</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main2.css">
 </head>
 <body>
   
@@ -53,13 +53,13 @@
         <div class="cssFormulaire">
 
             <label class="label">Pseudonyme :</label> 
-            <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
+            <input class="inputFormInscription" type="text" name="pseudoUtilisateur" placeholder="Pseudonyme" required class="txtBox" />
     
             <label class="label">E-Mail :</label>        
-            <input class="inputFormInscription" type="email" name="email" placeholder="E-Mail" required class="txtBox"/>
+            <input class="inputFormInscription" type="email" name="emailUtilisateur" placeholder="E-Mail" required class="txtBox"/>
 
             <label class="label">Mot de passe :</label> 
-            <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
+            <input class="inputFormInscription" type="password" name="mdpUtilisateur" placeholder="Mot de passe" required class="txtBox" />
 
         </div>
 
@@ -82,10 +82,10 @@
               <div class="cssFormulaire">
 
                   <label class="label">Pseudonyme :</label> 
-                  <input class="inputFormInscription" type="text" name="pseudo" placeholder="Pseudonyme" required class="txtBox" />
+                  <input class="inputFormInscription" type="text" name="pseudoUtilisateur" placeholder="Pseudonyme" required class="txtBox" />
 
                   <label class="label">Mot de passe :</label> 
-                  <input class="inputFormInscription" type="password" name="mdp" placeholder="Mot de passe" required class="txtBox" />
+                  <input class="inputFormInscription" type="password" name="mdpUtilisateur" placeholder="Mot de passe" required class="txtBox" />
 
               </div>
 

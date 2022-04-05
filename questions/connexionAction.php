@@ -4,13 +4,13 @@ require ('database.php');
 
 if(isset($_POST['enregistrerConnexion'])){
 
-    if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
+    if(!empty($_POST['pseudoUtilisateur']) AND !empty($_POST['mdpUtilisateur'])){
 
-        $user_pseudo = $_POST['pseudo'];
-        $user_password = $_POST['mdp'];
+        $user_pseudo = $_POST['pseudoUtilisateur'];
+        $user_password = $_POST['mdpUtilisateur'];
 
 
-        $checkIfUserExist = $bdd->prepare('SELECT * FROM utilisateurs WHERE pseudo = ?');
+        $checkIfUserExist = $bdd->prepare('SELECT * FROM utilisateur WHERE pseudoUtilisateur = ?');
         $checkIfUserExist->execute(array($user_pseudo));
 
 
@@ -18,12 +18,12 @@ if(isset($_POST['enregistrerConnexion'])){
 
             $usersInfos = $checkIfUserExist->fetch();
 
-            if(password_verify($user_password, $usersInfos['mdp'])){
+            if(password_verify($user_password, $usersInfos['mdpUtilisateur'])){
 
                 $_SESSION['auth'] = true;
-                $_SESSION['id'] = $usersInfos['id'];
-                $_SESSION['pseudo'] = $usersInfos['pseudo'];
-                $_SESSION['email'] = $usersInfos['email'];
+                $_SESSION['id'] = $usersInfos['Id_Utilisateur '];
+                $_SESSION['pseudo'] = $usersInfos['pseudoUtilisateur'];
+                $_SESSION['email'] = $usersInfos['emailUtilisateur'];
 
                 header('Location: index.php');
 
@@ -31,7 +31,7 @@ if(isset($_POST['enregistrerConnexion'])){
                 $errorMsg = "Votre mot de passe est incorrect...";
             }
         }else{
-            $errorMsg = "Votre pseudo est incorrect...";
+            $errorMsg = "Votre pseud est incorrect...";
         }
     }else{
         $errorMsg = "Veuillez compléter tous les champs...";

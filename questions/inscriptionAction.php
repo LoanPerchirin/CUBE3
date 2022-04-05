@@ -4,28 +4,28 @@ require ('database.php');
 
 if(isset($_POST['enregistrerInscription'])){
 
-    if(!empty($_POST['pseudo']) && !empty($_POST['mdp']) && !empty($_POST['email'])){
+    if(!empty($_POST['pseudoUtilisateur']) && !empty($_POST['mdpUtilisateur']) && !empty($_POST['emailUtilisateur'])){
 
-        $user_pseudo = htmlspecialchars($_POST['pseudo']);
-        $user_password = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
-        $user_email = htmlspecialchars($_POST['email']);
+        $user_pseudo = htmlspecialchars($_POST['pseudoUtilisateur']);
+        $user_password = password_hash($_POST['mdpUtilisateur'], PASSWORD_DEFAULT);
+        $user_email = htmlspecialchars($_POST['emailUtilisateur']);
 
-        $checkIfUserAlreadyExists = $bdd->prepare('SELECT pseudo FROM utilisateurs WHERE pseudo = ?');
+        $checkIfUserAlreadyExists = $bdd->prepare('SELECT pseudoUtilisateur FROM utilisateur WHERE pseudoUtilisateur = ?');
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
 
         if($checkIfUserAlreadyExists->rowCount() == 0){
-            $insertUserOnWebsite = $bdd->prepare('INSERT INTO utilisateurs(pseudo, mdp, email) VALUES(?, ?, ?)');
+            $insertUserOnWebsite = $bdd->prepare('INSERT INTO utilisateur(pseudoUtilisateur, mdpUtilisateur, emailUtilisateur) VALUES(?, ?, ?)');
             $insertUserOnWebsite->execute(array($user_pseudo, $user_password, $user_email));
 
-            $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, email FROM utilisateurs WHERE pseudo = ? AND email = ?');
+            $getInfosOfThisUserReq = $bdd->prepare('SELECT Id_Utilisateur , pseudoUtilisateur, emailUtilisateur FROM utilisateur WHERE pseudoUtilisateur = ? AND emailUtilisateur = ?');
             $getInfosOfThisUserReq->execute(array($user_pseudo, $user_email));
 
             $userInfos = $getInfosOfThisUserReq->fetch();
 
             $_SESSION['auth'] = true;
-            $_SESSION['id'] = $userInfos['id'];
-            $_SESSION['pseudo'] = $userInfos['pseudo'];
-            $_SESSION['email'] = $userInfos['email'];
+            $_SESSION['id'] = $userInfos['Id_Utilisateur '];
+            $_SESSION['pseudo'] = $userInfos['pseudoUtilisateur'];
+            $_SESSION['email'] = $userInfos['emailUtilisateur'];
 
             header('Location: index.php');
 
