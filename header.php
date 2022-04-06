@@ -41,7 +41,7 @@ echo"
               <div class='sous-header' id='header1'>
     
                 <div class='utilisateur'> 
-                    <a href='GestionDuProfil/GestionDuProfil.html' target='_bank'><img class='image' src='images/ProfilBlanc.png'></a>
+                    <a href='inscription.php' target='_bank'><img class='image' src='images/ProfilBlanc.png'></a>
                 </div>
             </div>
             </div>

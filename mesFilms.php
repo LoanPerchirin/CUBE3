@@ -19,51 +19,18 @@
     <!--Début Section-->
     <section id='sectionAccueil'>
 
-      <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Watchlist</h2>
-          </div>
-          <div class='carousselAccueil'>
+        <?php
+            require_once('mesFilmINC/carouselWatchlist.php');
+        ?>
 
-                <div class='wrapper'>
-                  <?php
-                    require_once('carouselWatchlist.php');
-                  ?>
-                </div><!--COMPARTIMENTNOUVEAUTÉ-->
-              </div>
+        <?php
+            require_once('mesFilmINC/carouselMesFilms.php');
+        ?>
 
+        <?php
+            require_once('mesFilmINC/acheterFilms.php');
+        ?>
 
-        <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Mes films</h2>
-          <div>
-          <div class='carousselAccueil'>
-
-            <div class='wrapper'>
-            <?php
-                    require_once('carouselMesFilms.php');
-                  ?>
-            </div>
-          </div><!--COMPARTIMENTWATCHLIST-->
-
-    
-
-  
-          <div class='carousselAccueil'>
-
-    <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Acheter des films</h2>
-          <div>
-
-            <div class='wrapper'>
-            <?php
-                    require_once('acheterFilms.php');
-                  ?>
-            </div>
-          </div><!--COMPARTIMENT WATCHLIST-->
-
-        </div><!--COMPARTIMENTACCUEIIL-->
 
 
     </section> 

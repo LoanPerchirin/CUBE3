@@ -1,19 +1,37 @@
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 body {
-  margin: 0;
-  background-color: #000;
+  background-color: rgb(11, 1, 15);
+  color: white;
+  margin:auto;
+  font-family: Comfortaa, sans-serif;
 }
+
+header{
+  background-color: rgb(112,19,109);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+#logodusite{
+width: 50px;
+}
+
 h1 {
   font-family: Arial;
   color: red;
   text-align: center;
 }
+
 #linkAccueil{
   display: flex;
   flex-direction: row;
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 100%);
@@ -58,29 +76,6 @@ h1 {
   right: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
-html{
-  scroll-behavior: smooth;
-  min-height: 100%;
-}
-
-body{
-  background-color: rgb(11, 1, 15);
-  color: white;
-  margin:auto;
-  font-family: Comfortaa, sans-serif;
-}
-
-header{
-  background-color: rgb(112,19,109);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: rgb(255, 255, 255);
-}
-
-#logodusite{
-width: 50px;
-}
 
 /* sous-header -> en gros c'est les 3
 compartiments*/
@@ -94,6 +89,12 @@ compartiments*/
 .image{
   height: 50px;
   width: 50px;
+  background-size: cover;
+}
+
+.imageGrande{
+  height: 170px;
+  width: 170px;
   background-size: cover;
 }
 
@@ -386,7 +387,6 @@ footer{
 
 .sous-footer{
   display: flex;
-
   align-items: center;
   gap: 15px;
 }
@@ -425,7 +425,348 @@ border: solid black 2px;
     grid-template: 
                 [row1-start] "r1"  [row1-end]
                 [row2-start] "r2"  [row2-end]
-                [row3-start] "r3"  [row3-end]
-                /* / 500px 500px 300px; */;            
+                [row3-start] "r3"  [row3-end]      
   }
 }
+.text-align-center{
+  text-align: center;
+}
+
+.padding-top{
+  padding-top: 110px;
+}
+
+.block{
+  width: 200px;
+  height: 2px;
+}
+
+.marginEnMoins{
+  margin: 5px;
+}
+/* DÉBUT GESTION PROFIL */
+
+#presentationProfil{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap: 30px;
+}
+
+#espacementLabel{
+  padding-right: 6px;
+}
+
+#informationDebutProfil{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.espacementBas{
+  padding-bottom: 5px ;
+}
+
+
+#test{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+#CPVilleProfil{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#sauvegarderGestionProfil{
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
+
+.boutons{
+  color: white;
+  background-color: rgb(112,19,109);
+  border: none;
+  padding: 5px;
+  box-shadow: 3px 3px rgb(85, 14, 83);
+}
+
+.boutons:hover{
+  background-color: rgb(122, 35, 119);
+}
+
+@media(max-width: 730px){
+  #test{
+    flex-direction:column ;
+    gap: 20px;
+  }
+  .block{
+    display: none;
+  }
+  .padding-top{
+    padding-top: 5px;
+  }
+}
+
+
+/* FIN GESTION PROFIL */
+
+
+
+
+/* DÉBUT FICHE CASTING */
+
+.compartimentPhotoInfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#photoCasting{
+  height: 400px;
+  width: 300px;
+}
+
+.infoCasting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#infoCastingBas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#biographie{
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#compartimentFilmographie{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.imageFilm{
+  height: 300px;
+  width: 150px;
+  border: 3px white solid;
+  transition: 250ms;
+}
+
+.imageFilm:hover{
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* Internet Explorer 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05); 
+}
+
+
+#envoyerUnCommentaire{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+
+.commentaires{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* FIN FICHE CASTING */
+
+/* DÉBUT ADMIN */
+
+.boutonAjouter{
+  width: 150px;
+  padding: 8px;
+  background-color: rgb(59, 59, 255);
+  border-radius:5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 27px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutonAjouter:hover{
+  background-color: rgb(28, 28, 255);
+}
+
+.boutonModifier{
+  width: 150px;
+  padding: 8px;
+  background-color: rgb(59, 255, 101);
+  border-radius:5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 27px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutonModifier:hover{
+  background-color: rgb(21, 202, 82);
+}
+
+.boutonSupprimer{
+  width: 150px;
+  padding: 8px;
+  background-color: rgb(255, 59, 59);
+  border-radius:5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 27px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutonSupprimer:hover{
+  background-color: rgb(182, 18, 18);
+}
+
+.boutonValider{
+  width: 150px;
+  padding: 8px;
+  background-color: rgb(36, 143, 59);
+  border-radius:5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 27px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutonValider:hover{
+  background-color: rgb(27, 112, 46);
+}
+
+
+.compartimentBouton{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.boutonAdmin{
+  display: flex;
+  justify-content: center;
+}
+
+#listeUtilisateurs{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  display: none;
+}
+
+#listeInscription{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  display: none;
+}
+
+/* FIN ADMIN */
+
+
+
+/* DÉBUT FICHE FILM */
+
+#photofilm{
+  width: 300px;
+  height: 300px;
+}
+
+.alignement{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* FIN FICHE FILM */
+
+/* DÉBUT INSCRIPTION, CONNEXION */
+
+
+#compartimentInscriptionConnexion{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 50px;
+}
+
+.cssFormulaire{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 6px;
+padding-bottom: 20px;
+}
+
+.annuler-enregistrer{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 30px;
+padding-bottom: 10px;
+}
+
+.goBack{
+  display: flex;
+}
+
+/* FIN INSCRIPTION, CONNEXION */

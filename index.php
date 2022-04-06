@@ -18,19 +18,10 @@
 
     <!--Début Section-->
     <section id='sectionAccueil'>
+        <?php
+        require_once('explorerINC/carouselNouveaute.php');
+        ?>
 
-      <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Nouveautés</h2>
-          </div>
-          <div class='carousselAccueil'>
-
-                <div class='wrapper'>
-                  <?php
-                    require_once('carouselNouveaute.php');
-                  ?>
-                </div><!--COMPARTIMENTNOUVEAUTÉ-->
-              </div>
 
 
       <div class='compartimentAccueil'></div>
@@ -46,37 +37,13 @@
             </div>
           </div><!--COMPARTIMENTWATCHLIST-->
 
-        <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Mes films</h2>
-          <div>
-          <div class='carousselAccueil'>
-
-            <div class='wrapper'>
             <?php
-                    require_once('carouselMesFilms.php');
-                  ?>
-            </div>
-          </div><!--COMPARTIMENTWATCHLIST-->
+                require_once('mesFilmINC/carouselMesFilms.php');
+            ?>
 
-    
-
-  
-          <div class='carousselAccueil'>
-
-    <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Watchlist</h2>
-          <div>
-
-            <div class='wrapper'>
             <?php
-                    require_once('carouselWatchlist.php');
-                  ?>
-            </div>
-          </div><!--COMPARTIMENT WATCHLIST-->
-
-        </div><!--COMPARTIMENTACCUEIIL-->
+                require_once('mesFilmINC/carouselWatchlist.php');
+            ?>
 
 
     </section> 
