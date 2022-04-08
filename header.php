@@ -15,7 +15,7 @@ echo"
                     </ul>
                 </li>
             </ul>  
-            <a id='linkAccueil' href=''>
+            <a id='linkAccueil' href='index.php'>
               <img id='logodusite' src='images/flixnetblanc3.png' alt='Logo FlixNet'>
     
                 <h1 id='titre'>FlixNet</h1>

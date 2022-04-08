@@ -22,15 +22,6 @@
         require_once('explorerINC/carouselNouveaute.php');
         ?>
 
-
-
-      <div class='compartimentAccueil'></div>
-          <div class='titreAccueil'>
-            <h2 class='indicateurAccueil'>Explorer</h2>
-          <div>
-          <div class='carousselAccueil'>
-
-            <div class='wrapper'>
             <?php
                     require_once('carouselExplorer.php');
                   ?>

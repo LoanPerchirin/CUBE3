@@ -377,6 +377,10 @@ justify-self:flex-end;
 
 
 /*FOOTER*/
+.love:hover{
+  color: gray;
+}
+
 footer{
   background-color: rgb(112,19,109);
   display: grid;
@@ -385,6 +389,7 @@ footer{
   justify-content: space-around;
 }
 
+
 .sous-footer{
   display: flex;
   align-items: center;
@@ -392,13 +397,15 @@ footer{
 }
 
 #footer2{
-display: flex;
-flex-wrap: wrap;
-flex-flow: row;
-justify-content: center;
-align-items: center;
-text-align: center;
+  text-decoration: none;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 .petiteImages{
 height: 20px;

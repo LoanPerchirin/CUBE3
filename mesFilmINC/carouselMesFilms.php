@@ -1,4 +1,5 @@
 <?php 
+include('questions/database.php');
 
 if(!isset($_GET['r']))     
 {     
@@ -10,6 +11,9 @@ document.location=\"$PHP_SELF?r=1&width=\"+screen.width+\"&Height=\"+screen.heig
 }     
 else {         
 // Code to be displayed if resolutoin is detected     
+$rep=$bdd->query("SELECT lienFilm from film where myFilm=1");
+$img=$rep->fetch();
+if($img==true){    
      if(isset($_GET['width'])) {     
                // Resolution  detected     
                $width=$_GET['width'];
@@ -436,5 +440,6 @@ else {
          echo "juste bad";
                // Resolution not detected     
      }     
+    }
 }     
 ?>

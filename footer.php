@@ -23,13 +23,11 @@ echo"
         </div>
          
         <div class='sous-footer' id='footer2'>
-            <p><a>Mentions légales </a>|<a> Nom </a>|<a> Liens </a>|<a> Contacts</a></p>
+            <p><a  class='love' style='text-decoration: none;color: white;'>Mentions légales </a>|<a class='love' style='text-decoration: none;color: white;' href='index.php'> Flixnet </a>|<a  class='love' href='questions/contacterAction.php' style='text-decoration: none;color: white;'> Contacts</a></p>
         </div>
 
         <div class='sous-footer' id='footer3'>
           <p>Flixnet ©</p>
-            <img class='petiteImages'>
-            <img class='petiteImages' src='images/Point d'interrogation.png' alt='Logo point d'interrogation'>
         </div>
 
     </footer>";
